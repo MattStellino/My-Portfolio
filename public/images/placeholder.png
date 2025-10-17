@@ -1,0 +1,12 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8fafc"/>
+  <rect x="50" y="50" width="300" height="200" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="200" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#334155">Project Screenshot</text>
+  <text x="200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#64748b">Coming Soon</text>
+  <rect x="150" y="190" width="100" height="40" fill="#3b82f6" opacity="0.8"/>
+  <text x="200" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">View Demo</text>
+</svg>
+
+
+
+
