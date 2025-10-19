@@ -33,8 +33,8 @@ export default function HomePage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  I'm a motivated Computer Programming & Analysis student with hands-on experience in software and web development, 
-                  database programming, and IT support. Based in Bolton, Ontario, I'm eager to contribute my technical skills 
+                  I&apos;m a motivated Computer Programming & Analysis student with hands-on experience in software and web development, 
+                  database programming, and IT support. Based in Bolton, Ontario, I&apos;m eager to contribute my technical skills 
                   and learn in a fast-paced professional environment.
                 </p>
                 <p>
@@ -43,7 +43,7 @@ export default function HomePage() {
                   while maintaining clean, scalable code and exceptional user experiences.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me exploring new technologies, 
+                  When I&apos;m not coding, you&apos;ll find me exploring new technologies, 
                   working on personal automation tools, or building projects that make everyday tasks more efficient.
                 </p>
               </div>

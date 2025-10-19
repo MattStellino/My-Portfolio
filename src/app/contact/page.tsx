@@ -88,7 +88,7 @@ export default function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
             >
-              I'm always open to new opportunities, collaboration, or just chatting tech!
+              I&apos;m always open to new opportunities, collaboration, or just chatting tech!
             </motion.p>
           </motion.div>
         </section>
@@ -216,11 +216,11 @@ export default function ContactPage() {
               transition={{ delay: 1.2, duration: 0.8, ease: "easeOut" }}
             >
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Let's connect</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Let&apos;s connect</h2>
                 <p className="text-gray-600 mb-8">
-                  I'm currently available for internships, co-op opportunities, and freelance projects. 
+                  I&apos;m currently available for internships, co-op opportunities, and freelance projects. 
                   Whether you have a question about my work or want to discuss a potential collaboration, 
-                  I'd love to hear from you!
+                  I&apos;d love to hear from you!
                 </p>
               </div>
 
