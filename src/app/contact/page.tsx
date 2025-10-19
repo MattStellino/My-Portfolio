@@ -96,7 +96,7 @@ export default function ContactPage() {
         {/* Main Content Grid */}
         <section className="py-6 md:py-8">
           <motion.div 
-            className="grid grid-cols-1 lg:grid-cols-2 gap-12"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
@@ -279,11 +279,23 @@ export default function ContactPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.4, duration: 0.8, ease: "easeOut" }}
               >
-                <h3 className="font-semibold text-gray-900 mb-2">Current Availability</h3>
-                <p className="text-gray-600 text-sm">
-                  Open for full-time positions, graduating in December. 
-                  Open to both remote and on-site opportunities in the Greater Toronto Area.
-                </p>
+                <h3 className="font-semibold text-gray-900 mb-4">Current Availability</h3>
+                <div className="space-y-3">
+                  <p className="text-gray-600 text-sm">
+                    Open for full-time positions, graduating in December 2024.
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Available for both remote and on-site opportunities in the Greater Toronto Area.
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Also interested in freelance projects and part-time opportunities.
+                  </p>
+                  <div className="pt-2">
+                    <p className="text-gray-500 text-xs">
+                      Response time: Usually within 24 hours
+                    </p>
+                  </div>
+                </div>
               </motion.div>
             </motion.div>
           </motion.div>
