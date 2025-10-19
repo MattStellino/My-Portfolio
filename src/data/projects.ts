@@ -26,7 +26,7 @@ export const projects: Project[] = [
     tech: ["Python", "Django", "Bootstrap"],
     github: "https://github.com/MattStellino/PremierGardenscapes",
     live: "https://premiergardenscapes.onrender.com/",
-    images: ["/images/pg_home.png", "/images/pg_about.png", "/images/pg_services.png", "/images/pg_gallery.png", "/images/pg_contact.png"],
+    images: ["/images/pg_home.PNG", "/images/pg_about.PNG", "/images/pg_services.PNG", "/images/pg_gallery.PNG", "/images/pg_contact.PNG"],
   },
   {
     title: "Live Chat App",
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description: "A modern, responsive portfolio showcasing my projects, experience, and skills. Built with Next.js, featuring animated UI components, dark/light mode, contact forms, and optimized performance. Demonstrates full-stack development capabilities with a focus on user experience and modern design principles.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React", "Formspree"],
     github: "https://github.com/MattStellino/portfolio",
-    live: "https://my-portfolio-git-master-mattstellinos-projects.vercel.app/education",
+    live: "https://my-portfolio-git-master-mattstellinos-projects.vercel.app",
     images: ["/images/image.png"],
   },
 ];
