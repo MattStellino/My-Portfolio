@@ -44,4 +44,12 @@ export const projects: Project[] = [
     live: "https://my-portfolio-git-master-mattstellinos-projects.vercel.app",
     images: ["/images/image.png"],
   },
+  {
+    title: "J&R Games Website",
+    description: "A comprehensive buylist application for a gaming store, featuring public item browsing with barcode scanning, contact forms, and a secure admin dashboard for inventory management. Built with modern web technologies and mobile-first responsive design.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "NextAuth.js"],
+    github: "https://github.com/MattStellino/jr-games-website",
+    live: "https://jr-games-website.vercel.app",
+    images: ["/images/placeholder.png"],
+  },
 ];
