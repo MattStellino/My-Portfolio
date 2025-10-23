@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description: "A modern, responsive portfolio showcasing my projects, experience, and skills. Built with Next.js, featuring animated UI components, dark/light mode, contact forms, and optimized performance. Demonstrates full-stack development capabilities with a focus on user experience and modern design principles.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React", "Formspree"],
     github: "https://github.com/MattStellino/portfolio",
-    live: "https://my-portfolio-git-master-mattstellinos-projects.vercel.app",
+    live: "https://matthew-stellino-portfolio-vercel.app",
     images: ["/images/image.png"],
   },
   {
