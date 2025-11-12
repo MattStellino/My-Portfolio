@@ -118,7 +118,7 @@ export default function EducationPage() {
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-3">
-                      <div className="text-gray-700 font-medium">• Database Design & Management (SQL, NoSQL)</div>
+                      <div className="text-gray-700 font-medium">• Database Design & Management (SQL, PL/SQL)</div>
                       <div className="text-gray-700 font-medium">• Advanced SQL Queries & Optimization</div>
                       <div className="text-gray-700 font-medium">• Database Administration & Performance Tuning</div>
                     </div>

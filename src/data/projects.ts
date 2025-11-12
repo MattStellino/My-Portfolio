@@ -34,14 +34,14 @@ export const projects: Project[] = [
     tech: ["React", "Node.js", "Socket.io", "MongoDB", "Redux", "Express.js", "JWT", "PrimeReact"],
     github: "https://github.com/MattStellino/Real-Time-Chat-App",
     live: "https://live-chat-app-swart.vercel.app/chats",
-    images: ["/images/Home.PNG", "/images/login.PNG", "/images/Register.PNG", "/images/ui.PNG", "/images/UI2.PNG", "/images/ui3.PNG", "/images/ui4.png", "/images/homewithchat.PNG"],
+    images: ["/images/homewithchat.PNG", "/images/login.PNG", "/images/Register.PNG", "/images/ui.PNG", "/images/UI2.PNG", "/images/ui3.PNG", "/images/ui4.png"],
   },
   {
     title: "Portfolio Website",
     description: "A modern, responsive portfolio showcasing my projects, experience, and skills. Built with Next.js, featuring animated UI components, dark/light mode, contact forms, and optimized performance. Demonstrates full-stack development capabilities with a focus on user experience and modern design principles.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React", "Formspree"],
     github: "https://github.com/MattStellino/portfolio",
-    live: "https://matthew-stellino-portfolio-vercel.app",
+    live: "https://mattstellino-portfolio.vercel.app",
     images: ["/images/image.png"],
   },
   {
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     description: "A comprehensive buylist application for a gaming store, featuring public item browsing with barcode scanning, contact forms, and a secure admin dashboard for inventory management. Built with modern web technologies and mobile-first responsive design.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "NextAuth.js"],
     github: "https://github.com/MattStellino/jr-games-website",
-    live: "https://jr-games-website.vercel.app",
-    images: ["/images/placeholder.png"],
+    live: "https://jnrgames.vercel.app/",
+    images: ["/images/JRHome.PNG", "/images/BuyList.PNG", "/images/Barcode.PNG", "/images/Contact.PNG"],
   },
 ];
