@@ -60,7 +60,7 @@ export default function Hero() {
             transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
             className="text-base md:text-lg leading-relaxed text-gray-600 max-w-2xl mx-auto"
           >
-            JavaScript-focused backend developer building secure Node.js and Express APIs and IT-centric software solutions. 
+            JavaScript focused backend developer building secure Node.js and Express APIs and IT-centric software solutions. 
             Strong background in IT support and telecom operations, enabling alignment between backend systems, infrastructure, and enterprise workflows.
           </motion.p>
         </div>

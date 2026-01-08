@@ -33,7 +33,7 @@ export default function HomePage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  JavaScript-focused backend developer with experience building secure Node.js and Express APIs and IT-centric software solutions. 
+                  JavaScript focused backend developer with experience building secure Node.js and Express APIs and IT-centric software solutions. 
                   Strong background in IT support and telecom operations, enabling alignment between backend systems, infrastructure, and enterprise workflows.
                 </p>
                 <p>

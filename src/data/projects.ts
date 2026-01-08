@@ -19,7 +19,16 @@ export const projects: Project[] = [
     tech: ["Node.js", "Express.js", "PostgreSQL", "JWT", "REST APIs", "JavaScript"],
     github: "https://github.com/MattStellino/smart_it_asset_tracker",
     live: "https://it-asset-tracker.vercel.app",
-    images: ["/images/placeholder.png"],
+    images: [
+      "/images/LandingPage.PNG",
+      "/images/Dashboard.PNG",
+      "/images/AssetList.PNG",
+      "/images/UserManagement.PNG",
+      "/images/LicenseManagement.PNG",
+      "/images/EmailRequest.PNG",
+      "/images/FinancialReports.PNG",
+      "/images/BarcodeScanner.PNG"
+    ],
   },
   {
     title: "Real-Time Chat Application",
