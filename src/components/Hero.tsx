@@ -51,7 +51,7 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
             className="text-lg md:text-xl text-gray-600 font-medium"
           >
-            Full-Stack Developer & IT Specialist
+            Backend Developer & IT Specialist
           </motion.h2>
           
           <motion.p
@@ -60,8 +60,8 @@ export default function Hero() {
             transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
             className="text-base md:text-lg leading-relaxed text-gray-600 max-w-2xl mx-auto"
           >
-            I build modern web applications and streamline business operations. 
-            Experienced in full-stack development, automation, and enterprise IT support.
+            JavaScript-focused backend developer building secure Node.js and Express APIs and IT-centric software solutions. 
+            Strong background in IT support and telecom operations, enabling alignment between backend systems, infrastructure, and enterprise workflows.
           </motion.p>
         </div>
         

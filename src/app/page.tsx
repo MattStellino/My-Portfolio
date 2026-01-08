@@ -33,18 +33,18 @@ export default function HomePage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  I&apos;m a motivated Computer Programming & Analysis student with hands-on experience in software and web development, 
-                  database programming, and IT support. Based in Bolton, Ontario, I&apos;m eager to contribute my technical skills 
-                  and learn in a fast-paced professional environment.
+                  JavaScript-focused backend developer with experience building secure Node.js and Express APIs and IT-centric software solutions. 
+                  Strong background in IT support and telecom operations, enabling alignment between backend systems, infrastructure, and enterprise workflows.
                 </p>
                 <p>
-                  My journey in technology started with a fascination for automation and efficiency. Today, I build 
-                  modern web and mobile applications using JavaScript, Python, Java, React, Node.js, and Express, 
-                  while maintaining clean, scalable code and exceptional user experiences.
+                  I specialize in designing RESTful APIs, implementing authentication and authorization systems (JWT, bcrypt, RBAC), 
+                  and building robust data models with PostgreSQL, Oracle SQL, and MongoDB. My experience in enterprise IT environments 
+                  (ServiceNow, MDM, telephony systems) informs my approach to building secure, audit-friendly, and operationally reliable backend systems.
                 </p>
                 <p>
-                  When I&apos;m not coding, you&apos;ll find me exploring new technologies, 
-                  working on personal automation tools, or building projects that make everyday tasks more efficient.
+                  With a Computer Programming & Analysis Advanced Diploma, I combine academic foundation with real-world 
+                  experience from roles at Sun Life Financial and Blue Ant Media, where I&apos;ve worked with enterprise systems, 
+                  account provisioning, security protocols, and process automation.
                 </p>
               </div>
               
@@ -77,29 +77,29 @@ export default function HomePage() {
                   className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg transition-all duration-300"
                   whileHover={{ y: -3, transition: { duration: 0.2 } }}
                 >
-                  <h4 className="font-semibold text-emerald-700 mb-2">Frontend Development</h4>
-                  <p className="text-sm text-gray-600">React, TypeScript, HTML5, CSS3, Tailwind CSS, Bootstrap</p>
-                </motion.div>
-                <motion.div 
-                  className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg transition-all duration-300"
-                  whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                >
                   <h4 className="font-semibold text-blue-700 mb-2">Backend Development</h4>
-                  <p className="text-sm text-gray-600">Node.js, Express.js, JavaScript, Python, Java, REST APIs</p>
+                  <p className="text-sm text-gray-600">Node.js, Express.js, REST APIs, JWT, JavaScript, Python, Java</p>
                 </motion.div>
                 <motion.div 
                   className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg transition-all duration-300"
                   whileHover={{ y: -3, transition: { duration: 0.2 } }}
                 >
-                  <h4 className="font-semibold text-purple-700 mb-2">Database & Cloud</h4>
-                  <p className="text-sm text-gray-600">MongoDB, SQL, AWS, Azure, Docker</p>
+                  <h4 className="font-semibold text-purple-700 mb-2">Databases & Data Modeling</h4>
+                  <p className="text-sm text-gray-600">PostgreSQL, Oracle SQL, PL/SQL, MongoDB, SQL</p>
                 </motion.div>
                 <motion.div 
                   className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg transition-all duration-300"
                   whileHover={{ y: -3, transition: { duration: 0.2 } }}
                 >
-                  <h4 className="font-semibold text-orange-700 mb-2">Tools & Technologies</h4>
-                  <p className="text-sm text-gray-600">Git, VS Code, Postman, Figma, Tableau, Agile</p>
+                  <h4 className="font-semibold text-green-700 mb-2">Cloud & Infrastructure</h4>
+                  <p className="text-sm text-gray-600">AWS (IAM, EC2, S3), Linux, Docker, ServiceNow</p>
+                </motion.div>
+                <motion.div 
+                  className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg transition-all duration-300"
+                  whileHover={{ y: -3, transition: { duration: 0.2 } }}
+                >
+                  <h4 className="font-semibold text-orange-700 mb-2">Security & Tools</h4>
+                  <p className="text-sm text-gray-600">JWT, bcrypt, RBAC, Git, Postman, VS Code, Secure Coding</p>
                 </motion.div>
               </div>
             </motion.div>

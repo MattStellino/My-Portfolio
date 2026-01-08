@@ -5,23 +5,23 @@ import { Settings, Code, Phone } from "lucide-react";
 // Experience highlights data
 const highlights = [
   {
-    title: "IT Support & Automation",
-    subtitle: "Sun Life, Blue Ant Media",
-    description: "Enterprise onboarding, technical support, and process automation.",
-    icon: Settings,
+    title: "Backend API Development",
+    subtitle: "Node.js & Express",
+    description: "Building secure RESTful APIs with JWT authentication, PostgreSQL data modeling, and enterprise-grade security practices.",
+    icon: Code,
     gradient: "from-blue-500 to-cyan-500",
   },
   {
-    title: "Programming Projects",
-    subtitle: "5+ Applications",
-    description: "Full-stack web apps and business solutions with modern stacks.",
-    icon: Code,
+    title: "IT & Enterprise Systems",
+    subtitle: "Sun Life, Blue Ant Media",
+    description: "Enterprise IT support, account provisioning, security protocols, and system migrations in production environments.",
+    icon: Settings,
     gradient: "from-purple-500 to-pink-500",
   },
   {
-    title: "Telephony Operations",
+    title: "Telecom & Infrastructure",
     subtitle: "Avaya, Amazon Connect",
-    description: "System migrations, voice asset management, and telecom workflows.",
+    description: "Telephony system migrations, asset management, ServiceNow workflows, and infrastructure operations.",
     icon: Phone,
     gradient: "from-green-500 to-emerald-500",
   },
@@ -42,7 +42,7 @@ export default function HighlightCard() {
           Experience Highlights
         </h2>
         <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-          Key areas of expertise and professional experience across enterprise environments.
+          Backend development expertise and enterprise IT experience building secure, scalable systems.
         </p>
       </motion.div>
       

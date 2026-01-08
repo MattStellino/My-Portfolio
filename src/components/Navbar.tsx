@@ -54,7 +54,7 @@ export default function Navbar() {
           <div className="flex items-center justify-end gap-3">
             <div className="hidden md:block">
               <a
-                href="/Matthew Stellino_Resume.pdf"
+                href="/Matthew Stellino Resume - Backend.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white font-medium rounded-lg shadow-sm hover:shadow-md transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 relative z-10"
@@ -96,7 +96,7 @@ export default function Navbar() {
             </div>
             <div className="border-t border-gray-200 pt-4">
               <a
-                href="/Matthew Stellino_Resume.pdf"
+                href="/Matthew Stellino Resume - Backend.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}

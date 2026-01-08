@@ -218,8 +218,8 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Let&apos;s connect</h2>
                 <p className="text-gray-600 mb-8">
-                  I&apos;m currently available for internships, co-op opportunities, and freelance projects. 
-                  Whether you have a question about my work or want to discuss a potential collaboration, 
+                  I&apos;m open to full-time opportunities and collaborations. 
+                  Whether you have a question about my work or want to discuss a potential opportunity, 
                   I&apos;d love to hear from you!
                 </p>
               </div>
@@ -282,7 +282,7 @@ export default function ContactPage() {
                 <h3 className="font-semibold text-gray-900 mb-4">Current Availability</h3>
                 <div className="space-y-3">
                   <p className="text-gray-600 text-sm">
-                    Open for full-time positions, graduating in December 2024.
+                    Open for full-time positions.
                   </p>
                   <p className="text-gray-600 text-sm">
                     Available for both remote and on-site opportunities in the Greater Toronto Area.

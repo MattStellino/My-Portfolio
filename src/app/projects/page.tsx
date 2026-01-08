@@ -54,7 +54,7 @@ export default function ProjectsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
               >
-                A showcase of real-world applications, automation tools, and web projects built with modern technology stacks.
+                Backend-focused projects showcasing RESTful API design, secure authentication systems, database architecture, and enterprise IT solutions built with Node.js, Express, and modern backend technologies.
               </motion.p>
             </div>
           </motion.div>
