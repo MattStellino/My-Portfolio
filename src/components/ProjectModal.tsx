@@ -94,20 +94,20 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-6xl my-8 bg-white rounded-2xl shadow-2xl"
+            className="relative w-full max-w-3xl my-8 bg-white rounded-xl shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button - fixed position */}
             <button
               onClick={onClose}
-              className="sticky top-4 right-4 float-right z-20 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
+              className="sticky top-2 right-2 float-right z-20 p-1.5 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
               aria-label="Close modal"
             >
-              <X size={20} />
+              <X size={18} />
             </button>
 
             {/* Image carousel section */}
-            <div className="relative h-96 md:h-[500px] bg-gray-100">
+            <div className="relative h-64 md:h-80 bg-gray-100 rounded-t-xl overflow-hidden">
               {project.images && project.images.length > 0 ? (
                 <>
                   <Image
@@ -115,7 +115,7 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
                     alt={`${project.title} - Image ${currentImageIndex + 1}`}
                     fill
                     className="object-contain pointer-events-none"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                    sizes="(max-width: 768px) 100vw, 900px"
                   />
                   
                   {/* Carousel navigation controls */}
@@ -123,29 +123,29 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
                     <>
                       <button
                         onClick={prevImage}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors z-10"
+                        className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors z-10"
                         aria-label="Previous image"
                         type="button"
                       >
-                        <ChevronLeft size={24} />
+                        <ChevronLeft size={20} />
                       </button>
                       
                       <button
                         onClick={nextImage}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors z-10"
+                        className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors z-10"
                         aria-label="Next image"
                         type="button"
                       >
-                        <ChevronRight size={24} />
+                        <ChevronRight size={20} />
                       </button>
                       
                       {/* Image counter */}
-                      <div className="absolute top-4 left-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm pointer-events-none">
+                      <div className="absolute top-2 left-2 bg-black/50 text-white px-2 py-1 rounded-full text-xs pointer-events-none">
                         {currentImageIndex + 1} / {project.images.length}
                       </div>
                       
                       {/* Image dots indicator */}
-                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
                         {project.images.map((_, index) => (
                           <button
                             key={index}
@@ -153,7 +153,7 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
                               e.stopPropagation();
                               setCurrentImageIndex(index);
                             }}
-                            className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                            className={`w-2 h-2 rounded-full transition-all duration-200 ${
                               index === currentImageIndex 
                                 ? 'bg-white' 
                                 : 'bg-white/50 hover:bg-white/75'
@@ -174,76 +174,76 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
             </div>
 
             {/* Project details section */}
-            <div className="p-6 md:p-8 space-y-6">
-                {/* Project title and description */}
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                    {project.title}
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed text-lg">
-                    {project.description}
-                  </p>
-                </div>
+            <div className="p-4 md:p-6 space-y-4">
+              {/* Project title and description */}
+              <div>
+                <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+                  {project.title}
+                </h2>
+                <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                  {project.description}
+                </p>
+              </div>
 
-                {/* Technology stack */}
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                    Technologies Used
+              {/* Technology stack */}
+              <div>
+                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                  Technologies Used
+                </h3>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.tech.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2 py-1 rounded-full bg-blue-100 text-blue-800 font-medium text-xs"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Demo Credentials */}
+              {project.demoCredentials && (
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                  <h3 className="text-base font-semibold text-gray-900 mb-2">
+                    Demo Admin Credentials
                   </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-medium text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Demo Credentials */}
-                {project.demoCredentials && (
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Demo Admin Credentials
-                    </h3>
-                    <div className="space-y-2 text-sm">
-                      <div>
-                        <span className="font-medium text-gray-700">Email: </span>
-                        <span className="text-gray-900 font-mono">{project.demoCredentials.email}</span>
-                      </div>
-                      <div>
-                        <span className="font-medium text-gray-700">Password: </span>
-                        <span className="text-gray-900 font-mono">{project.demoCredentials.password}</span>
-                      </div>
+                  <div className="space-y-1 text-xs">
+                    <div>
+                      <span className="font-medium text-gray-700">Email: </span>
+                      <span className="text-gray-900 font-mono">{project.demoCredentials.email}</span>
+                    </div>
+                    <div>
+                      <span className="font-medium text-gray-700">Password: </span>
+                      <span className="text-gray-900 font-mono">{project.demoCredentials.password}</span>
                     </div>
                   </div>
-                )}
+                </div>
+              )}
 
-                {/* Action buttons */}
-                <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                  {project.live && (
-                    <Link
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
-                    >
-                      View Live Project
-                      <ArrowUpRight size={16} />
-                    </Link>
-                  )}
+              {/* Action buttons */}
+              <div className="flex flex-col sm:flex-row gap-2 pt-2">
+                {project.live && (
                   <Link
-                    href={project.github}
+                    href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 font-semibold rounded-lg transition-colors"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-colors"
                   >
-                    View on GitHub
-                    <ArrowUpRight size={16} />
+                    View Live Project
+                    <ArrowUpRight size={14} />
                   </Link>
-                </div>
+                )}
+                <Link
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold rounded-lg transition-colors"
+                >
+                  View on GitHub
+                  <ArrowUpRight size={14} />
+                </Link>
+              </div>
               </div>
           </motion.div>
         </motion.div>
