@@ -50,7 +50,7 @@ export default function ProjectCard({ project, onClick }: Props) {
               src={project.images[currentImageIndex]}
               alt={`${project.title} - Image ${currentImageIndex + 1}`}
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              className="object-cover group-hover:scale-105 transition-transform duration-300 pointer-events-none"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             
@@ -58,29 +58,31 @@ export default function ProjectCard({ project, onClick }: Props) {
             {project.images.length > 1 && (
               <>
                 {/* Image counter */}
-                <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full">
+                <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full z-10 pointer-events-none">
                   {currentImageIndex + 1} / {project.images.length}
                 </div>
                 
                 {/* Navigation arrows */}
                 <button
                   onClick={prevImage}
-                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1.5 rounded-full z-20 transition-all duration-200"
                   aria-label="Previous image"
+                  type="button"
                 >
                   <ChevronLeft size={16} />
                 </button>
                 
                 <button
                   onClick={nextImage}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1.5 rounded-full z-20 transition-all duration-200"
                   aria-label="Next image"
+                  type="button"
                 >
                   <ChevronRight size={16} />
                 </button>
                 
                 {/* Image dots indicator */}
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
                   {project.images.map((_, index) => (
                     <button
                       key={index}
@@ -94,6 +96,7 @@ export default function ProjectCard({ project, onClick }: Props) {
                           : 'bg-white/50 hover:bg-white/75'
                       }`}
                       aria-label={`Go to image ${index + 1}`}
+                      type="button"
                     />
                   ))}
                 </div>

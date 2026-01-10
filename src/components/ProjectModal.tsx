@@ -79,7 +79,7 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-6xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl"
+            className="relative w-full max-w-6xl max-h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
@@ -91,8 +91,10 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
               <X size={20} />
             </button>
 
-            {/* Image carousel section */}
-            <div className="relative h-96 md:h-[500px] bg-gray-100">
+            {/* Scrollable content wrapper */}
+            <div className="overflow-y-auto">
+              {/* Image carousel section */}
+              <div className="relative h-96 md:h-[500px] bg-gray-100 flex-shrink-0">
               {project.images && project.images.length > 0 ? (
                 <>
                   <Image
@@ -150,78 +152,79 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
                   <div className="text-gray-500">No images available</div>
                 </div>
               )}
-            </div>
-
-            {/* Project details section */}
-            <div className="p-6 md:p-8 space-y-6">
-              {/* Project title and description */}
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                  {project.title}
-                </h2>
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  {project.description}
-                </p>
               </div>
 
-              {/* Technology stack */}
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  Technologies Used
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-medium text-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+              {/* Project details section */}
+              <div className="p-6 md:p-8 space-y-6">
+                {/* Project title and description */}
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                    {project.title}
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    {project.description}
+                  </p>
                 </div>
-              </div>
 
-              {/* Demo Credentials */}
-              {project.demoCredentials && (
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Demo Admin Credentials
+                {/* Technology stack */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    Technologies Used
                   </h3>
-                  <div className="space-y-2 text-sm">
-                    <div>
-                      <span className="font-medium text-gray-700">Email: </span>
-                      <span className="text-gray-900 font-mono">{project.demoCredentials.email}</span>
-                    </div>
-                    <div>
-                      <span className="font-medium text-gray-700">Password: </span>
-                      <span className="text-gray-900 font-mono">{project.demoCredentials.password}</span>
-                    </div>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-medium text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              )}
 
-              {/* Action buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                {project.live && (
+                {/* Demo Credentials */}
+                {project.demoCredentials && (
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      Demo Admin Credentials
+                    </h3>
+                    <div className="space-y-2 text-sm">
+                      <div>
+                        <span className="font-medium text-gray-700">Email: </span>
+                        <span className="text-gray-900 font-mono">{project.demoCredentials.email}</span>
+                      </div>
+                      <div>
+                        <span className="font-medium text-gray-700">Password: </span>
+                        <span className="text-gray-900 font-mono">{project.demoCredentials.password}</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Action buttons */}
+                <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                  {project.live && (
+                    <Link
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                    >
+                      View Live Project
+                      <ArrowUpRight size={16} />
+                    </Link>
+                  )}
                   <Link
-                    href={project.live}
+                    href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 font-semibold rounded-lg transition-colors"
                   >
-                    View Live Project
+                    View on GitHub
                     <ArrowUpRight size={16} />
                   </Link>
-                )}
-                <Link
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 font-semibold rounded-lg transition-colors"
-                >
-                  View on GitHub
-                  <ArrowUpRight size={16} />
-                </Link>
+                </div>
               </div>
             </div>
           </motion.div>
