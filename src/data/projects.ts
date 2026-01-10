@@ -8,6 +8,10 @@ export type Project = {
   live?: string;
   images: string[];
   demoEmbed?: string;
+  demoCredentials?: {
+    email: string;
+    password: string;
+  };
 };
 
 // Portfolio projects data - Organized with backend-heavy projects first
@@ -18,7 +22,7 @@ export const projects: Project[] = [
     description: "Designed RESTful APIs to manage the full IT asset lifecycle with role-based access control and audit-friendly logging. Built a Node.js and Express.js backend with PostgreSQL for enterprise-grade data modeling, implementing secure JWT authentication, comprehensive asset assignment tracking, and automated workflow management. Features include real-time inventory status updates, user permission management, and detailed audit trails for compliance and operational reliability.",
     tech: ["Node.js", "Express.js", "PostgreSQL", "JWT", "REST APIs", "JavaScript"],
     github: "https://github.com/MattStellino/smart_it_asset_tracker",
-    live: "https://it-asset-tracker.vercel.app",
+    live: "https://smartitat.com",
     images: [
       "/images/LandingPage.PNG",
       "/images/Dashboard.PNG",
@@ -29,6 +33,10 @@ export const projects: Project[] = [
       "/images/FinancialReports.PNG",
       "/images/BarcodeScanner.PNG"
     ],
+    demoCredentials: {
+      email: "johndoe@gmail.com",
+      password: "AdminPass123"
+    },
   },
   {
     title: "Real-Time Chat Application",

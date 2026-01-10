@@ -181,6 +181,25 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
                 </div>
               </div>
 
+              {/* Demo Credentials */}
+              {project.demoCredentials && (
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Demo Admin Credentials
+                  </h3>
+                  <div className="space-y-2 text-sm">
+                    <div>
+                      <span className="font-medium text-gray-700">Email: </span>
+                      <span className="text-gray-900 font-mono">{project.demoCredentials.email}</span>
+                    </div>
+                    <div>
+                      <span className="font-medium text-gray-700">Password: </span>
+                      <span className="text-gray-900 font-mono">{project.demoCredentials.password}</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* Action buttons */}
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
                 {project.live && (

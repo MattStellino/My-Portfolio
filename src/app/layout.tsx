@@ -1,6 +1,15 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Matthew Stellino Portfolio",
+  description: "Backend Developer Portfolio - JavaScript focused backend developer building secure Node.js and Express APIs and IT-centric software solutions.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
