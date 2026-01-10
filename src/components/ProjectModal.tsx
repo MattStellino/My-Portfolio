@@ -100,7 +100,7 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
             {/* Close button - fixed position */}
             <button
               onClick={onClose}
-              className="sticky top-2 right-2 float-right z-20 p-1.5 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
+              className="sticky top-3 right-3 float-right z-20 p-1.5 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors m-3"
               aria-label="Close modal"
             >
               <X size={18} />
@@ -123,7 +123,7 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
                     <>
                       <button
                         onClick={prevImage}
-                        className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors z-10"
+                        className="absolute left-3 top-1/2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors z-10"
                         aria-label="Previous image"
                         type="button"
                       >
@@ -132,7 +132,7 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
                       
                       <button
                         onClick={nextImage}
-                        className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors z-10"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors z-10"
                         aria-label="Next image"
                         type="button"
                       >
@@ -140,12 +140,12 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
                       </button>
                       
                       {/* Image counter */}
-                      <div className="absolute top-2 left-2 bg-black/50 text-white px-2 py-1 rounded-full text-xs pointer-events-none">
+                      <div className="absolute top-3 left-3 bg-black/50 text-white px-2 py-1 rounded-full text-xs pointer-events-none">
                         {currentImageIndex + 1} / {project.images.length}
                       </div>
                       
                       {/* Image dots indicator */}
-                      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+                      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
                         {project.images.map((_, index) => (
                           <button
                             key={index}
