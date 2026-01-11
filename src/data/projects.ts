@@ -19,8 +19,8 @@ export const projects: Project[] = [
   // BACKEND / API PROJECTS (Featured)
   {
     title: "IT Asset Tracker",
-    description: "Designed RESTful APIs to manage the full IT asset lifecycle with role-based access control and audit-friendly logging. Built a Node.js and Express.js backend with PostgreSQL for enterprise-grade data modeling, implementing secure JWT authentication, comprehensive asset assignment tracking, and automated workflow management. Features include real-time inventory status updates, user permission management, and detailed audit trails for compliance and operational reliability.",
-    tech: ["Node.js", "Express.js", "PostgreSQL", "JWT", "REST APIs", "JavaScript"],
+    description: "Designed RESTful APIs to manage the full IT asset lifecycle with role-based access control and audit-friendly logging. Built a Node.js and Express.js backend with PostgreSQL for enterprise-grade data modeling, implementing secure JWT authentication, comprehensive asset assignment tracking, and automated workflow management. Deployed on AWS Elastic Beanstalk with RDS for managed database services, utilizing automated CI/CD pipeline through GitHub for continuous integration and deployment. Features include real-time inventory status updates, user permission management, and detailed audit trails for compliance and operational reliability.",
+    tech: ["Node.js", "Express.js", "PostgreSQL", "JWT", "REST APIs", "JavaScript", "AWS Elastic Beanstalk", "RDS", "CI/CD"],
     github: "https://github.com/MattStellino/smart_it_asset_tracker",
     live: "https://smartitat.com",
     images: [
