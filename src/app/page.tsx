@@ -92,7 +92,7 @@ export default function HomePage() {
                   whileHover={{ y: -3, transition: { duration: 0.2 } }}
                 >
                   <h4 className="font-semibold text-green-700 mb-2">Cloud & Infrastructure</h4>
-                  <p className="text-sm text-gray-600">AWS (IAM, EC2, S3), Linux, Docker, ServiceNow</p>
+                  <p className="text-sm text-gray-600">AWS, Linux, Docker, ServiceNow</p>
                 </motion.div>
                 <motion.div 
                   className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg transition-all duration-300"
